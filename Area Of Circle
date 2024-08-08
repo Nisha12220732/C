@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello world!\n");
+    float p=2.14f,r=0.0f;
+   r=3.14*p*p;
+   printf("Area of circle is %d",r);
+   return 0;
+
+}
