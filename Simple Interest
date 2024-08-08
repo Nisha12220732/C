@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+
+    printf("Hello world!\n");
+    float p=2.14f,r=0.0f,t=2.14f,si=0.0f,a=0.0f;
+   si=(p*r*t)/100.0;
+   a=p+si;
+   printf("/n Simple Interest is: %.2f and final amount is:%.2f",si,a);
+   return 0;
+
+}
+
