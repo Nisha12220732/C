@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    char x[]="Hello";
+    char x1[6]="World";
+    char x2[6];
+    printf("\n Enter string: ");
+    scanf("%s",x2);
+    printf("%s %s %s",x,x1,x2);
+    printf("\n %c",x[0]);
+
+    printf("\n %d",sizeof(x));
+    // it will take 1 memory cell for null character
+
+    return 0;
+}
+
