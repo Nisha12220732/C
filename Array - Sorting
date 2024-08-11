@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int a[100];
+    int hold,i,j,n;
+    printf("\n Enter the number of array elements:");
+    scanf("\n%d",&n);
+    printf("\n Enter array elements:");
+    for (i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    printf("\n Data items in original order :");
+   for (i=0;i<n;i++)
+   {
+       printf("%d",a[i]);
+
+   for (j=0;j<n-i-1;j++)
+   {
+       if (a[i]>a[j+1])
+       {
+           hold=a[i];
+           a[i]=a[j];
+           a[j]=hold;
+       }
+   }
+
+   }
+   printf("\n Data items in ascending order");
+   for (i=0;i<n;i++)
+   {
+       printf("%d ",a[i]);
+   }
+    return 0;
+}
